@@ -1,0 +1,343 @@
+@import '../bootstrap.scss'
+
+body
+	background: #eef2f5
+
+.container
+	margin-top: 30px
+
+a.download
+	float: right
+	color: #258bdb
+	font-size: 15px
+	font-weight: 400
+	text-transform: none
+	position: relative
+	top: -3px
+
+
+.card-warpper
+	background: #FFF
+	padding: 20px 25px
+	border: 1px solid #dce1e6
+	border-radius: 6px
+	margin-bottom: 17px
+	.phase-counter
+		margin-bottom: 25px
+		font-size: 17px
+		display: block
+	.contractor, .consultant
+		.title
+			opacity: 0.7
+			color: #596782
+			font-size: 14px
+			font-weight: 400
+			line-height: 24px
+			display: block
+		.text
+			color: #334464
+			font-size: 22px
+			font-weight: 400
+			line-height: 36px
+			margin-bottom: 25px
+			display: block
+
+	.panel
+		margin-bottom: 0
+		border: 0
+		.panel-heading
+			padding: 10px
+			background: #00b47c
+			background-color: #00b47c
+			border-radius: 6px 6px 0 0
+			color: #FFF
+			display: flex
+			position: relative
+			z-index: 2
+			.title
+				font-size: 22px
+				font-weight: 400
+				line-height: 34px
+				margin: auto
+				margin-left: 0
+			.menu-dots
+				margin: auto
+				margin-right: 0
+				font-size: 20px
+				position: relative
+				top: -8px
+				left: -8px
+				cursor: pointer
+				transform: scale(1.5)
+		.panel-body
+			border: 1px solid #e5e9ed
+			border-radius: 0 0 6px 6px
+			position: relative
+			top: -1px
+			z-index: 1
+			padding-bottom: 0
+			.panel-body-heading
+				color: #334464
+				font-size: 16px
+				font-weight: 700
+				margin-bottom: 5px
+				
+			.panel-body-table
+				.table
+					border: 1px solid #eff1f5
+					border-radius: 4px
+					.t-row
+						list-style-type: none
+						padding: 0
+						margin: 0
+						&:nth-child(odd)
+							background-color: #f7f9fa
+						&:nth-child(even)
+							border-top: 1px solid #eff1f5
+							li
+								font-size: 14px
+								color: #9ba4b4
+								margin-left: 5px
+								span.number
+									color: #334464
+						li
+							display: inline-block
+							margin-left: 5px
+							font-size: 16px
+							font-weight: 400
+							padding: 10px 5px
+							color: #9ba4b4
+							span.number
+								color: #334464
+	.panel.actual
+		.panel-heading
+			background: #3da5df
+
+
+.with-no-table
+	padding: 0
+	> .gray
+		position: relative
+		.gray-layer
+			padding: 20px
+			background-color: rgba(247, 249, 250, 0.39)
+			border-right: 1px solid #e5e9ed
+			height: 100%
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			height: 330px
+			z-index: 1
+		.phase-counter
+			padding-top: 20px
+		.phase-counter, .contractor, .consultant
+			position: relative
+			z-index: 2
+	.contractor .title, .consultant .title, .panel .panel-body .panel-body-heading
+		opacity: 0.55
+		color: #929ea6
+		font-size: 14px
+		font-weight: 100
+		text-transform: uppercase
+	.panel .panel-body .panel-body-table .table
+		border: 
+			right: 0
+			left: 0
+	.panel .panel-body .panel-body-table .table .t-row:nth-child(odd)
+		background: #FFF
+	.col-xs-5
+		padding: 
+			top: 20px
+			bottom: 20px
+			right: 20px
+			left: 20px
+	.panel-default
+		border: 1px solid transparent
+		border-color: #DDD
+		border-left: 20px solid #00b47c
+		border-radius: 6px
+	.panel.actual
+		border-left: 20px solid #3da5df
+		border-radius: 6px 0 0 6px
+	.panel .panel-heading, .panel.actual .panel-heading
+		background: #FFF 
+		color: inherit
+		color: #00b47c
+		border-bottom: 0
+	.panel.actual .panel-heading
+		color: #3da5df
+	.panel .panel-body
+		border: 0
+
+
+
+
+
+
+.with-text-1
+	padding: 0
+	position: relative
+	&.with-timeline
+		padding-top: 70px
+	.panel-heading
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		color: #FFF
+		background: #00b47c
+		display: flex
+		.text
+			font-size: 22px
+			padding-left: 20px
+		.menu-dots
+			margin: auto
+			margin-right: 0
+			font-size: 20px
+			position: relative
+			top: -8px
+			left: -8px
+			cursor: pointer
+			transform: scale(1.5)
+	.edit-delete
+		position: absolute
+		right: 10px
+		bottom: 10px
+		color: #258bdb
+		font-size: 15px
+		a
+			display: inline-block
+			margin-left: 10px
+	> .gray
+		position: relative
+		.gray-layer
+			padding: 20px
+			background-color: rgba(247, 249, 250, 0.39)
+			border-right: 1px solid #e5e9ed
+			height: 100%
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			height: 330px
+			z-index: 1
+	.phase-counter
+		padding-top: 20px
+	.content
+		padding-left: 30px
+		.title
+			color: #555e6d
+			font-size: 20px
+			font-weight: 400
+			margin: 0
+			padding: 0
+			padding-top: 20px
+			padding-bottom: 20px
+			display: block
+		.content-title
+			opacity: 0.55
+			color: #929ea6
+			font-size: 14px
+			font-weight: 400
+			margin: 0
+			padding: 0
+			padding-top: 10px
+			padding-bottom: 0px
+			display: block
+			text-transform: uppercase
+		.content-body
+			color: #555e6d
+			font-size: 19px
+			font-weight: 400
+			margin: 0
+			padding: 0
+			padding-top: 5px
+			padding-bottom: 20px
+			display: block
+			&.description
+				font-size: 14px
+			.impact-indicator
+				.indicator
+					width: 15px
+					height: 15px
+					background: #75dd43
+					display: inline-block
+					margin-right: 10px
+		.padding-top
+			padding-top: 20px
+	.with-line
+		position: relative
+		&:after
+			position: absolute
+			top: 17%
+			right: 0
+			width: 1px
+			background-color: #c3c9ce
+			display: block
+			content: ''
+			height: 300px
+	.split
+		padding: 0
+		.col-xs-6
+			padding: 0
+			a
+				color: #258bdb
+				font-size: 16px
+	.timeline
+		display: flex
+		flex-direction: column
+		padding-left: 60px
+		ul
+			list-style-type: none
+			padding: 0
+			padding-left: 30px
+			margin: 0
+			li
+				margin: auto
+				margin-top: 50%
+				color: #cbd0d5
+				font-size: 19px
+				position: relative
+				&:before
+					content: ''
+					width: 14px
+					height: 14px
+					border-radius: 100%
+					display: block
+					background: #c3c9ce
+					position: absolute
+					left: -20px
+					bottom: 8px
+				&:after
+					width: 1px
+					height: 120px
+					display: block
+					background: #c3c9ce
+					position: absolute
+					left: -14px
+					bottom: 15px
+					content: ""
+				&:first-of-type
+					margin-top: 19%
+					&:after
+						display: none
+						content: ""
+				&.active
+					color: #555e6d
+					&:before
+						background: #ffb300
+.with-timeline.col-xs-4
+	.panel-heading .text
+		padding-left: 10px
+	.content
+		padding-left: 3%
+	.col-xs-12.timeline
+		padding: 0
+		li
+			margin: 10% auto
+			margin-bottom: 5%
+	.download
+		float: none
