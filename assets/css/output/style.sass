@@ -341,3 +341,29 @@ a.download
 			margin-bottom: 5%
 	.download
 		float: none
+
+
+
+.boq-card
+	overflow: hidden
+	&.closed-card
+		width: 33.333%
+		transition: .2s ease-in-out
+		.show-in-expand
+			display: none
+		.hide-in-expand
+			display: block
+		.change-width-col-xs-7
+			width: 58.33333%
+		.change-width-col-xs-5
+			width: 41.66666667%
+		.with-line
+			&:after
+				display: none
+	&.open-card
+		width: 100%
+		transition: .2s ease-in-out
+		.show-in-expand
+			display: block
+		.hide-in-expand
+			display: none
